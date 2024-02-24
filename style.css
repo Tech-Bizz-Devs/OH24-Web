@@ -1,0 +1,196 @@
+*{
+    font-family: montserrate;
+}
+body{
+    background: f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 1;
+}
+.carousel-caption h5{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(244, 250, 251);
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-top: 5%;
+    color: rgb(244, 250, 251);
+    margin-top: 0%
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.nav-bar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+.service .card-body i{
+    font-size: 50px;
+}
+.team .card-body i{
+    font-size: 20px;
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.img-fluid{
+    max-width: 100%;
+    height: 280px;
+}
+.portfolio_wrapper .nav-link{
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin-right: 0.25rem;
+    color: var(--text-black);
+    text-transform: uppercase;
+}
+.portfolio_wrapper .nav-link.active{
+    color: var(--secondary-text);
+    background-color: transparent;
+}
+.portfolio_wrapper .portfolio-img{
+    position: relative;
+    cursor: pointer;
+}
+.portfolio_wrapper .portfolio-img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+.portfolio_wrapper .portfolio-img:hover .overlay{
+    background: rgba(77,87,222,.5);
+}
+.portfolio_wrapper .portfolio-img .overlay i{
+    font-size: 6.25rem;
+    color: var(--text-white);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    -webkit-transition: translate(-50%,-50%);
+    -o-transition: translate(-50%,-50%);
+    -ms-transition: translate(-50%,-50%);
+    -moz-transition:translate(-50%,-50%); 
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -ms-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+.portfolio_wrapper .portfolio-img:hover.overlay i{
+    opacity: 1;
+    visibility: visible;
+    top:50%;
+    left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive css */
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+
+@media only screen and(max-width:767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+
+    }
+}
