@@ -1,2 +1,2 @@
-# OH24-Web
-OpenHack 2024 Web Projects
+# Open_hack
+This repo is created by shivam, riya, yash.
