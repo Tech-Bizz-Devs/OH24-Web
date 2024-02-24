@@ -1,5 +1,6 @@
 
 <div align="center">
+  <img src="https://github.com/othneildrew/Best-README-Template/raw/master/images/logo.png" alt="logo"/>
   <h1>Todo List Web Application</h1>
   <p>This project is a simple Todo List web application built using HTML, CSS, and JavaScript. It allows users to manage their tasks by providing CRUD (Create, Read, Update, Delete) operations for todo items.</p>
   <hr>
