@@ -69,6 +69,9 @@ The HTML file `sample.html` will be generated.
 ## Dependencies
 - [marked](https://www.npmjs.com/package/marked): A Markdown parser and compiler. Automatically installed when running `npm install`.
 
+## Refrences
+- [Article by Sameer Borate](https://www.smashingmagazine.com/2019/04/nodejs-express-api-markdown-html/): We refered to this article by Sameer Borate and analyse their approach and implement that in the working of our project
+
 ## How it Works
 The converter reads the contents of the Markdown file, parses it using the `marked` module, and generates an HTML file with the same name as the input Markdown file.
 
