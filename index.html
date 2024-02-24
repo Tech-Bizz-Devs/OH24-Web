@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenHack Quiz website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles here */
+    body, html {
+      height: 100%;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .jumbotron {
+      background-color: #f8f9fa;
+    }
+    .btn-animate {
+      animation: fadeInAnimation 0.5s ease forwards;
+      opacity: 1;
+      color:black;
+    }
+   
+   #invi-btn{
+    color:black;
+    background-color: white;
+   }
+    @keyframes fadeInAnimation {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Welcome to OpenHack Quiz</h1>
+      <p class="lead">Are you ready to challenge your knowledge?</p>
+      <hr class="my-4">
+      <p>Please select how you want to play:</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <button class="btn btn-primary btn-lg btn-block btn-animate" onclick="selectIndividual()">Individual Player</button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-success btn-lg btn-block btn-animate" onclick="selectTeam()">Team Player</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Individual Player Modal -->
+  <div class="modal fade" id="individualModal" tabindex="-1" role="dialog" aria-labelledby="individualModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="individualModalLabel">Individual Player</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Individual Player Form -->
+          <form>
+            <div class="form-group">
+              <label for="individualName">Your Name</label>
+              <input type="text" class="form-control" id="individualName" placeholder="Enter your name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          <button type="button" class="btn " onclick="startQuiz('individual')"><a href="individual.html">Start Quiz</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Player Modal -->
+  <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="teamModalLabel">Team Player</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Team Player Form -->
+          <form>
+            <div class="form-group">
+              <label for="teamName">Team Name</label>
+              <input type="text" class="form-control" id="teamName" placeholder="Enter your team name">
+            </div>
+            <div class="form-group">
+              <label for="numberOfMembers">Number of Team Members</label>
+              <input type="number" class="form-control" id="numberOfMembers" placeholder="Enter number of team members">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" onclick="startQuiz('team')"><a href="team.html">Start Quiz</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Team Player Modal -->
+<div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="teamModalLabel">Team Player</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Team Player Form -->
+        <form>
+          <div class="form-group">
+            <label for="teamName">Team Name</label>
+            <input type="text" class="form-control" id="teamName" placeholder="Enter your team name">
+          </div>
+          <div class="form-group">
+            <label for="numberOfMembers">Number of Team Members (maximum 5)</label>
+            <input type="number" class="form-control" id="numberOfMembers" placeholder="Enter number of team members" max="5">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" onclick="startQuiz('team')">Start Quiz</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+//     // Function to open Individual Player modal
+//     function selectIndividual() {
+//       $('#individualModal').modal('show');
+//     }
+//     // Function to open Team Player modal
+//     function selectTeam() {
+//       $('#teamModal').modal('show');
+//     }
+//     // Function to start quiz based on player type
+//     function startQuiz(playerType) {
+//       let url = "team.html"; // Assuming the quiz content is in quiz.html file
+//       if (playerType === 'individual') {
+//         // Append parameter for individual player
+//         url += "?player=individual";
+//       } else {
+//         // Append parameter for team player
+//         url += "?player=team";
+//       }
+//       // Open new window with quiz
+//       window.open(url, "_self - Default");
+//     }
+
+//     // Function to start quiz based on player type
+// function startQuiz(playerType) {
+//   if (playerType === 'team') {
+//     let numberOfMembers = document.getElementById('numberOfMembers').value;
+//     // Check if the number of team members exceeds the limit
+//     if (numberOfMembers > 5) {
+//       alert("Maximum number of team members allowed is 5.");
+//       return; // Prevent further execution
+//     }
+//   }
+
+//   let url = "quiz.html"; // Assuming the quiz content is in quiz.html file
+//   // Append parameter for player type
+//   url += "?player=" + playerType;
+//   // Open new window with quiz
+//   window.open(url, "_self");
+// }
+
+ // Function to open Individual Player modal
+ function selectIndividual() {
+            $('#individualModal').modal('show');
+        }
+
+        // Function to open Team Player modal
+        function selectTeam() {
+            $('#teamModal').modal('show');
+        }
+
+        // Function to start quiz based on player type
+        function startQuiz(playerType) {
+            if (playerType === 'team') {
+                let numberOfMembers = document.getElementById('numberOfMembers').value;
+                if (numberOfMembers > 5) {
+                    alert("Maximum number of team members allowed is 5.");
+                    return;
+                }
+            }
+
+            let url = ""; // Update the URL for quiz based on player type
+            if (playerType === 'individual') {
+                url = "individual.html"; // Assuming the quiz content is in individual.html file for individual player
+            } else {
+                url = "team.html"; // Assuming the quiz content is in team.html file for team player
+            }
+            window.open(url, "_self");
+        }
+
+
+
+    
+  </script>
+</body>
+</html>
