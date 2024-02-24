@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
+<%--<%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>--%>
 
 
 <!DOCTYPE html>
@@ -127,7 +127,7 @@
                                                     <asp:PlaceHolder runat="server" ID="groupPlaceHolder1"></asp:PlaceHolder>
                                                     <tr>
                                                         <td colspan="3">
-                                                            <asp:DataPager ID="DataPager1" runat="server" PagedControlID="FacilitesBaindListView" PageSize="15">
+                                                            <asp:DataPager ID="DataPager1" runat="server" PagedControlID="FacilitesBaindListView" PageSize="1">
                                                                 <Fields>
                                                                     <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="false" ShowPreviousPageButton="true"
                                                                         ShowNextPageButton="false" />
