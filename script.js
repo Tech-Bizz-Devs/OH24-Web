@@ -10,8 +10,13 @@ const displayCount = (taskCount)=>{
 countValue.innerText=taskCount;
 };
 
-const addTask=()=>{ 
+const addTask=async()=>{ 
     const taskName=newTaskInput.value.trim();
+//     let a=await JSON.parse(window.localStorage.getItem('todo'))
+//       let aa={...a}
+//       aa={...a,...taskName}
+// console.log(aa)
+    window.localStorage.setItem('todo',JSON.stringify({taskName}))
     error.computedStyleMap.display="none";
     if(!taskName){ 
         setTimeout(()=>{ 
