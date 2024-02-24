@@ -74,13 +74,3 @@ The HTML file `sample.html` will be generated.
 
 ## How it Works
 The converter reads the contents of the Markdown file, parses it using the `marked` module, and generates an HTML file with the same name as the input Markdown file.
-
-## Contribution
-Contributions are welcome! Feel free to submit issues or pull requests.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify and expand this `README.md` template according to your project's needs.
