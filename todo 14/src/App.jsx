@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { MdDelete } from "react-icons/md";
+import { FiEdit } from "react-icons/fi";
+
+
 
 function App() {
   const [input, setInput] = useState("");
@@ -37,11 +41,13 @@ function App() {
 
   return (
     <>
-      <div className="w-[1080px] mx-auto text-white">
-        <h1 className="text-center text-5xl mt-20">TODO</h1>
+    <div className="flex w-full items-center justify-center">
+      <div className="max-w-[1080px] px-10 text-white">
+      <img  src="https://i.pinimg.com/originals/31/36/cd/3136cd447c99783f59cd1a4c7d9ca9c1.png" className="h-[200px] w-[200px] mx-auto" alt="" />
+        <h1 className="text-center text-5xl mt-20 font-bold">TODO MANAGEMENT</h1>
         <div className="w-[500px] mx-auto flex flex-col gap-5 items-center mt-10">
           <input
-            className="px-4 rounded-3xl w-[500px] h-[100px] bg-[#0E1325] mt-5 placeholder:text-slate-400 placeholder:font-semibold"
+            className="px-4 rounded-xl w-[500px] h-[60px] bg-[#0E1325] mt-2 placeholder:text-slate-400 placeholder:font-semibold"
             type="text"
             value={input}
             onChange={handleInput}
@@ -55,12 +61,10 @@ function App() {
           </button>
         </div>
 
-        <div className="h-[2px] w-[1000px] mx-auto mt-5 bg-gray-400 bg-opacity-50"></div>
-
-        <div className="max-w-[1000px] mx-auto flex flex-wrap overflow-hidden items-center mt-10 gap-5 justify-center">
+        <div className="max-w-[1000px] mx-auto flex flex-wrap overflow-hidden items-start mt-10 gap-5 justify-center">
           {todo.map((currValue, index) => (
             <div
-              className="max-w-[300px] px-3 py-2 h-fit bg-[#0C0F1E] rounded-xl border "
+              className="max-w-[300px] px-3 py-2 h-fit bg-[#0C0F1E] rounded-xl border border-slate-700 "
               key={index}
             >
               {editIndex === index ? (
@@ -83,24 +87,30 @@ function App() {
                   </button>
                 ) : (
                   <>
+                  <div className="flex items-center justify-center gap-2 bg-slate-800 w-[130px] rounded-lg">
+                  <FiEdit />
                     <button
                       onClick={() => toggleEdit(index)}
-                      className="bg-slate-800 w-[130px] rounded-lg"
                     >
                       Edit
                     </button>
+                  </div>
+
+                    <div className="flex items-center justify-center gap-2  bg-red-500 w-[130px] rounded-lg">
+                    <MdDelete />
                     <button
                       onClick={() => deleteTodo(index)}
-                      className="bg-red-500 w-[130px] rounded-lg"
                     >
-                      Delete
+                      Delete 
                     </button>
+                    </div>
                   </>
                 )}
               </div>
             </div>
           ))}
         </div>
+      </div>
       </div>
     </>
   );
