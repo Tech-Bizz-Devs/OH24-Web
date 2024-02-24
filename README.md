@@ -1,2 +1,2 @@
 # OH24-Web
-OpenHack 2024 Web Projects
+Todo Item Management System with CRUD Operations #6
