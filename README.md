@@ -3,6 +3,7 @@
 ## Todo Manager App
 
  Welcome to the documentation for our Todo Manager App! This document serves as a comprehensive guide for developers, administrators, and users interested in understanding and utilizing our Todo Manager App built using Node.js, ReactJS and MongoDB.
+
 ## Introduction
  
 ### What is Todo Manager App ?
@@ -25,8 +26,6 @@
     Frontend: React JS and CSS.
     Backend: Node.js.
     Database: MongoDB.
-
-### Looks Like
 
 
 #### To run the Todo Manager App locally, follow these steps:
