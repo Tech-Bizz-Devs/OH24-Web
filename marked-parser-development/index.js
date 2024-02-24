@@ -4,7 +4,7 @@ const marked = require('marked');
 function convertMarkdownToHTML(inputFile) {
     fs.readFile(inputFile, 'utf8', (err, data) => {
         if (err) {
-            console.error('Error reading input file:', err);
+            console.log('Error reading input file:', err);
             return;
         }
 
@@ -13,7 +13,7 @@ function convertMarkdownToHTML(inputFile) {
         const outputFile = inputFile.replace('.md', '.html');
         fs.writeFile(outputFile, htmlContent, 'utf8', (err) => {
             if (err) {
-                console.error('Error writing output file:', err);
+                console.log('Error writing output file:', err);
                 return;
             }
             console.log(`Markdown converted to HTML and saved as ${outputFile}`);
