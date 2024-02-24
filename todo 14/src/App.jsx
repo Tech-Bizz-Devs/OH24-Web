@@ -4,7 +4,7 @@ function App() {
   const [input, setInput] = useState("");
   const [todo, setTodo] = useState([]);
 
-  const [editIndex, setEditIndex] = useState(-1); // Index of todo item being edited
+  const [editIndex, setEditIndex] = useState(-1); 
 
   const handleInput = (e) => {
     setInput(e.target.value);
@@ -14,7 +14,7 @@ function App() {
     setTodo((prevVal) => {
       return [...prevVal, input];
     });
-    setInput(""); // Clear input after adding todo
+    setInput(""); 
   };
 
   const deleteTodo = (index) => {
@@ -31,8 +31,8 @@ function App() {
     const updatedTodo = [...todo];
     updatedTodo[index] = input;
     setTodo(updatedTodo);
-    setEditIndex(-1); // Exit edit mode after updating
-    setInput(""); // Clear input after updating
+    setEditIndex(-1); 
+    setInput(""); 
   };
 
   return (
