@@ -1,0 +1,362 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="VidyaGlobalSchool.master.cs" Inherits="VidyaGlobalSchool" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Vidya Global School Bhilwara" />
+    <meta name="revisit-after" content="7 days">
+    <meta name="copyright" content="Vidya Global School in Bhilwara">
+    <meta name="title" content="Vidya Global School in Bhilwara | Best school in Bhilwara">
+    <meta name="description" content="Vidya Global School is an English medium School, co-educational School that combines the very best in educational practices, powered and propelled by philosophy of education that is electric and very truly modern.">
+    <meta name="keywords" content="best CBSE school in Bhilwara,best CBSE school in Bhilwara Rajasthan,the best school in Bhilwara English,Best CBSE school in Bhilwara English medium,Best CBSE school in Bhilwara map,best CBSE school in Bhilwara Private school,Bhilwara's Best School,Bhilwara's top school	,cbse best school in Bhilwara,top school in Bhilwara,top schools in Bhilwara,top 10 CBSE schools in Bhilwara,top 10 schools in Bhilwara,cbse school in Bhilwara,best CBSE school in Bhilwara,the best school in Bhilwara,the best school in Bhilwara by CBSE,the best school in Bhilwara English,the best school in Bhilwara English medium,English medium school in Bhilwara,best CBSE school in Bhilwara,best school Bhilwara,Bhilwara top 10 school,Bhilwara top school,CBSE school in Bhilwara,English medium school in Bhilwara,schools in Bhilwara,schools in Bhilwara Rajasthan,top schools in Bhilwara,vidya college Bhilwara,Vidya Global School,Vidya Global School Bhilwara,Vidya Global School in Bhilwara address,Vidya Global School in Bhilwara address and phone number,Vidya Global School in Bhilwara admission,Vidya Global School in Bhilwara,Vidya Global School in Bhilwara Rajasthan">
+    <link rel="canonical" href="https://vgsbhilwara.com/">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vidya Global School in Bhilwara | Best school in Bhilwara" />
+    <meta property="og:description" content="Vidya Global School is an English medium School, co-educational School that combines the very best in educational practices, powered and propelled by philosophy of education that is electric and very truly modern." />
+    <meta property="og:site_name" content="https://vgsbhilwara.com/" />
+    <meta property="og:url" content="https://vgsbhilwara.com/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vidya Global School in Bhilwara | Best school in Bhilwara" />
+    <meta name="twitter:description" content="Vidya Global School is an English medium School, co-educational School that combines the very best in educational practices, powered and propelled by philosophy of education that is electric and very truly modern." />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- PAGE TITLE HERE -->
+    <title>Welcome to vidya global school</title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/templete.css">
+    <link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-3.css">
+    <!-- Google Font -->
+    <style>
+        @import url('../css2');
+
+        @media only screen and (max-width: 360px) {
+            .widget-post-bx iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/revolution.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="bg">
+    <form id="form1" runat="server">
+<%--        <div class="page-wraper">
+            <!-- header -->
+            <header class="site-header mo-left  header navstyle3">
+                <div class="top-bar">
+                    <div class="container">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <asp:ListView ID="ContactInformationListView1" runat="server">
+                                <ItemTemplate>
+                                    <div class="dlab-topbar-left">
+                                        <ul>
+                                            <li><i class="la la-phone-volume"></i><%# Eval("Phone") %></li>
+                                            <li><i class="las la-map-marker"></i><%# Eval("SchoolAddress") %></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dlab-topbar-right">
+                                        <ul>
+                                            <li><i class="las la-envelope-open"></i><%# Eval("Email") %></li>
+                                            <li><a href="AdmissionFrom.aspx" tabindex="1" target="_blank" class="btn btn-success" style="background-color: #2EC4B6; border: none;">Admission Form</a></li>
+                                            <li><a href="ALUMNI.aspx?id=0" tabindex="1" target="_blank" class="btn btn-success" style="background-color: #2EC4B6; border: none;">ALUMNI Corner</a></li>
+                                        </ul>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:ListView>
+                        </div>
+                    </div>
+                </div>
+                <!-- main header -->
+                <div class="sticky-header main-bar-wraper navbar-expand-lg header-transparent">
+                    <div class="main-bar clearfix ">
+                        <div class="container clearfix">
+                            <!-- website logo -->
+                            <div class="logo-header mostion logo-white">
+                                <a href="index.aspx">
+                                    <img src="images/logo-3.png" alt="Vidya Global School Bhilwara - Best CBSE School In Bhilwara"></a>
+                            </div>
+                            <!-- nav toggle button -->
+                            <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- extra nav -->
+
+                            <!-- main nav -->
+                            <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                                <div class="logo-header d-md-block d-lg-none">
+                                    <a href="index.aspx">
+                                        <img src="images/logo-3.png" alt="Vidya Global School Bhilwara - Best CBSE School In Bhilwara"></a>
+                                </div>
+                                <ul class="nav navbar-nav">
+                                    <li class="active">
+                                        <a href="index.aspx">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">About<i class="fas fa-chevron-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="Introduction.aspx">INTRODUCTION</a></li>
+                                            <li><a href="DirectorMessage.aspx">DIRECTOR'S MESSAGE</a></li>
+                                            <li><a href="VisionMission.aspx">VISION & MISSION</a></li>
+                                            <li>
+                                                <a href="javascript:;">INFRASTRUCTURE<i class="fas fa-chevron-down"></i></a>
+
+                                                <ul class="sub-menu tab-content">
+                                                    <asp:ListView runat="server" ID="InfrastructureListView">
+                                                        <ItemTemplate>
+                                                            <li>
+                                                                <a href="InfrastructureGallery.aspx?InfrastructureGalleryid=<%#Eval("ID") %>"><%# Eval("InfrastructureName") %></i></a>
+                                                            </li>
+                                                        </ItemTemplate>
+                                                    </asp:ListView>
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">ACADEMICS<i class="fas fa-chevron-down"></i></a>
+
+                                        <ul class="sub-menu tab-content">
+                                            <li>
+                                                <a href="Achievements.aspx">ACHIEVEMENTS</a>
+                                            </li>
+                                            <li>
+                                                <a href="Faculty.aspx">FACULTY</a>
+                                            </li>
+                                            <li>
+                                                <a href="TransferCertificare.aspx">TRANSFER CERTIFICATE</a>
+                                            </li>
+                                            <li>
+                                                <a href="MandatoryPublic.aspx">MANDATORY PUBLIC</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="Notices.aspx">NOTICES & CIRCULARS</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="Gallery.aspx">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="Events.aspx">Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="LatestNews.aspx">Latest News</a>
+                                    </li>
+                                    <li>
+                                        <a href="Contact.aspx">Contact Us</a>
+                                    </li>
+                                    <%--                                    <li><a href="AdmissionFrom.aspx">Admission Form</a></li>-%>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main header END -->
+            </header>
+            <!-- header END -->--%>
+            <div class="page-content bg-white">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- Footer -->
+<%--            <footer class="site-footer">
+                <div class="footer-top" style="background-image: url(images/pattern/pt15.png);">
+                    <div class="container">
+                        <div class="row">
+                            <asp:ListView ID="ContactInformationListView" runat="server">
+                                <ItemTemplate>
+                                    <div class="col-xl-3 col-lg-3 col-md-6 col-5 col-sm-6 footer-col-4 col-12">
+                                        <div class="widget widget_about border-0">
+                                            <h5 class="footer-title">About Us</h5>
+                                            <p class="mm-t5" style="text-align: justify;">
+                                                <%# Eval("CompanyDetails") %>
+                                            </p>
+                                            <ul class="contact-info-bx">
+                                                <li style="text-align: justify;"><i class="las la-map-marker"></i><%# Eval("SchoolAddress") %>
+                                                </li>
+                                                <li><i class="las la-mobile"></i><%# Eval("mobile") %></li>
+                                                <li><i class="las la-phone-volume"></i><%# Eval("Phone") %></li>
+                                                <li><i class="las la-envelope-open"></i><%# Eval("Email") %></li>
+                                                <li><i class="las la-globe"></i><%# Eval("WebLink") %></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-lg-2 col-md-6 col-sm-6 footer-col-4 col-12">
+                                        <div class="widget widget_services border-0">
+                                            <h5 class="footer-title">Usefull Link</h5>
+                                            <ul class="mm-t10">
+                                                <li><a href="index.aspx">Home</a></li>
+                                                <li><a href="Introduction.aspx">Introduction</a></li>
+                                                <li><a href="DirectorMessage.aspx">Director's Message</a></li>
+                                                <li><a href="VisionMission.aspx">Vision & Mission</a></li>
+                                                <li><a href="InfrastructureGallery.aspx?InfrastructureGalleryid=3">Infrastructure</a></li>
+                                                <li><a href="Faculty.aspx">Faculty</a></li>
+                                                <li><a href="Facilites.aspx?Facilitesid=1">Facilities</a></li>
+                                                <li><a href="Contact.aspx">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-2 col-md-6 col-sm-6 footer-col-4 col-12">
+                                        <div class="widget widget_services border-0">
+                                            <h5 class="footer-title">POPULAR LINKS</h5>
+                                            <ul class="mm-t10">
+                                                <li><a href="Achievements.aspx">Achievements</a></li>
+                                                <li><a href="MandatoryPublic.aspx">Mandatory Public</a></li>
+                                                <li><a href="Gallery.aspx">Gallery</a></li>
+                                                <li><a href="TransferCertificare.aspx">Transfer Certificare</a></li>
+                                                <li><a href="AdmissionFrom.aspx">Admission Form</a></li>
+                                                <li><a href="LatestNews.aspx">Latest News</a></li>
+                                                <li><a href="Events.aspx">Events</a></li>
+                                                <li>
+                                                    <a href="Notices.aspx">NOTICES & CIRCULARS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dlab-social-icon">
+                                            <ul>
+                                                <li><a class="site-button circle fab fa-facebook-f" href="https://www.facebook.com/vgsbhilwara" target="_blank"></a></li>
+                                                <%-- <li><a class="site-button  circle fab fa-twitter" href="javascript:void(0);"></a></li>
+                                                        <li><a class="site-button circle fab fa-linkedin-in" href="javascript:void(0);"></a></li>-%>
+                                                <li><a class="site-button circle fab fa-instagram" href="https://www.instagram.com/vidya_global_senior_sec_school/" target="_blank"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-7 col-sm-6 footer-col-4 col-12">
+                                        <div class="widget border-0 recent-posts-entry">
+                                            <h5 class="footer-title">Google Map</h5>
+                                            <div class="widget-post-bx">
+                                                <iframe
+                                                    src="<%# Eval("MapLink") %>"
+                                                    style="border: 0; width: 320PX !important; height: 380px" allowfullscreen="" loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:ListView>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer END-->
+                <!-- footer bottom part -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 text-left ">
+                                <span>Copyright © 2024 All rights reserved at Vidya Global School. Design & Developed By<a
+                                    href="https://spmpltech.com/home" target="_blank"> SPMPLTECH</a></span>
+                                <%--  <div class="col-md-6 col-sm-6 text-right ">
+                                    <div class="widget-link ">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">About</a></li>
+                                            <li><a href="javascript:void(0);">Help Desk</a></li>
+                                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>-%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>--%>
+            <!-- Footer END-->
+            <!-- Footer END-->
+
+            <button class="scroltop style1 radius white" type="button"><i class="fas fa-arrow-up"></i></button>
+            <div />
+            <!-- JAVASCRIPT FILES ========================================= -->
+            <script src="js/jquery.min.js"></script>
+            <!-- JQUERY.MIN JS -->
+            <script src="plugins/wow/wow.js"></script>
+            <!-- WOW JS -->
+
+            <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- BOOTSTRAP.MIN JS -->
+            <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+            <!-- FORM JS -->
+            <script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+            <!-- FORM JS -->
+            <script src="plugins/magnific-popup/magnific-popup.js"></script>
+            <!-- MAGNIFIC POPUP JS -->
+            <script src="plugins/counter/waypoints-min.js"></script>
+            <!-- WAYPOINTS JS -->
+            <script src="plugins/counter/counterup.min.js"></script>
+            <!-- COUNTERUP JS -->
+            <script src="plugins/imagesloaded/imagesloaded.js"></script>
+            <!-- IMAGESLOADED -->
+            <script src="plugins/masonry/masonry-3.1.4.js"></script>
+            <!-- MASONRY -->
+            <script src="plugins/masonry/masonry.filter.js"></script>
+            <!-- MASONRY -->
+            <script src="plugins/owl-carousel/owl.carousel.js"></script>
+            <!-- OWL SLIDER -->
+            <script src="plugins/lightgallery/js/lightgallery-all.min.js"></script>
+            <!-- Lightgallery -->
+            <script src="js/custom.js"></script>
+            <!-- CUSTOM FUCTIONS  -->
+            <script src="js/dz.carousel.js"></script>
+            <!-- SORTCODE FUCTIONS  -->
+            <script src="plugins/countdown/jquery.countdown.js"></script>
+            <!-- COUNTDOWN FUCTIONS  -->
+            <script src="js/dz.ajax.js"></script>
+            <!-- CONTACT JS  -->
+            <script src="plugins/rangeslider/rangeslider.js"></script>
+            <!-- Rangeslider -->
+
+
+            <script src="js/jquery.lazy.min.js"></script>
+            <!-- REVOLUTION JS FILES -->
+            <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+            <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+            <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+            <script src="plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+            <script src="plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+            <script src="plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+            <script src="plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+            <script src="plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+            <script src="plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+            <script src="plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+            <script src="plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
+            <script src="js/rev.slider.js"></script>
+            <script>
+                jQuery(document).ready(function () {
+                    'use strict';
+                    dz_rev_slider_3();
+                    $('.lazy').Lazy();
+                });	/*ready*/
+            </script>
+    </form>
+</body>
+</html>
