@@ -3,9 +3,9 @@ import Card from './Card';
 
 const members = [
   { name: 'Rituraj Jha', designation: 'UI UX Designer', imagePath: '/photo.png' },
-  { name: 'Ganesh Rana', designation: 'Backend Developer', imagePath: '/jane-smith.png' },
-  { name: 'Divyanshu Chouhan', designation: 'Frontend Developer', imagePath: '/bob-johnson.png' },
-  { name: 'Aahil Sheikh', designation: 'AI-ML', imagePath: '/alice-williams.png' }
+  { name: 'Ganesh Rana', designation: 'Backend Developer', imagePath: '/gn.png' },
+  { name: 'Divyanshu Chouhan', designation: 'Frontend Developer', imagePath: '/dc.png' },
+  { name: 'Aahil Sheikh', designation: 'AI-ML', imagePath: '/ah.png' }
 ];
 
 const CardContainer = () => {
