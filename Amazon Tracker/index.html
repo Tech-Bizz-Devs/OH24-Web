@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="./slick/slick.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="./slick/slick-theme.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css">
+    <title>Steady</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <ul id="heading">
+            <li id="welcome"><a href="#">welcome to AMAZON!</a></li>
+            <li><a href="#"><i class='fa fa-phone'
+                       id="headicon"></i>88888888</a></li>
+            <li><a href="#"><i class='fa fa-envelope-open'
+                       id="headicon"></i>demo@gmail.com</a></li>
+        </ul>
+    </div>
+
+   
+    <div class="container-fluid py-3 ">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="images/Amazon_logo.svg" style="width: 100px;"
+                     alt="amazon_logo" />
+            </div>
+            <div class="col-md-7 text-center">
+                <form>
+                    <input type="text"
+                           placeholder="Search your product.."
+                           name="search">
+                    <button type="submit"
+                            class=""
+                            id="searchbtn"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="col-md-3 kk">
+                <button class="btn login px-3 py-1 ml-1"
+                        type="button"><i class='fa fa-male'
+                       id="headicon"></i>Login</button>
+                <button class="btn signup px-3 py-1"
+                        type="button">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-0 px-0 ">
+        <a class="navbar-brand py-0"
+           href="#"><button type="button"
+                    class="btn shop2 ">Shop By Category<i class='fa fa-angle-down'></i></button></a>
+        <span class="cart"><i class='fa fa-shopping-cart'></i></span>
+        <button class="navbar-toggler "
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+            <ul class="navbar-nav bg-dark ">
+                <li class="nav-item active">
+                    <a class="text-white h"
+                       href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white"
+                       href="product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white"
+                       href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white"
+                       href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white"
+                       href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-white "
+                       href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleControls"
+         class="carousel slide"
+         data-ride="carousel">
+        <div class="carousel-inner postion-relative">
+            <div class="carousel-item active carousel-transition">
+                <img src="images/banner1.jpg"
+                     class="d-block w-100 bannerimage"
+                     alt="banner">
+            </div>
+            <div class="carousel-item carousel-transition">
+                <img src="images/banner.jpg"
+                     class="d-block w-100 bannerimage"
+                     alt="banner">
+            </div>
+            <div class="carousel-item carousel-transition">
+                <img src="images/banner.jpg"
+                     class="d-block w-100 bannerimage"
+                     alt="banner">
+            </div>
+
+            <div class="text float-right">
+                <span id="deal"> Great Deal On</span></br>
+                <span id="state"> Stationery</span></br>
+                <span id="stateline"
+                      style="font-size: 13px;">best online store for art & craft supplies</span></br>
+                <button type="button"
+                        class="btn shopbtn">Shop now</button></br>
+                <a class="carousel-control-next"
+                   href="#carouselExampleControls"
+                   role="button"
+                   data-slide="next">
+                    <span class="carousel-control-next-ico"
+                          aria-hidden="true"></span>
+                    <button class="aricon"><i class='fa fa-angle-right'></i></button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row second">
+
+            <div class="col-md-12 box3 pl-0">
+                <div class="box1 ">Shop By Category<span class="caret"></span></div>
+                <a class="carousel-control-next"
+                   href="#carouselExampleContro"
+                   role="button"
+                   data-slide="prev">
+                    <span class="carousel-control-prev-ico"
+                          aria-hidden="true"></span>
+                    <button type="button"
+                            class="arry1 "><i class='fa fa-angle-left'></i></button></a>
+                <a class="carousel-control-next"
+                   href="#carouselExampleContro"
+                   role="button"
+                   data-slide="next">
+                    <span class="carousel-control-next-ico"
+                          aria-hidden="true"></span>
+                    <button type="button"
+                            class="arry"><i class='fa fa-angle-right'></i></button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleContro"
+         class="carousel slide container"
+         data-ride="carousel"
+         data-interval="false">
+        <div class="carousel-inner">
+            <div id="shopid"
+                 class="carousel-item active carousel-transition">
+                <div class="row">
+                    <div class="col-md"><img src="images/thumb-3.jpg"
+                             alt="thumb" />
+                        <P class="thumb">Calculator</br> Shop Now<i class='fa fa-angle-right'></i><i
+                               class='fa fa-angle-right'></i></P>
+                    </div>
+                    <div class="col-md"><img src="images/thumb-2.jpg"
+                             alt="thumb" />
+                        <P class="thumb">Notebook</br> Shop Now<i class='fa fa-angle-right'></i><i
+                               class='fa fa-angle-right'></i></P>
+                    </div>
+                    <div class="col-md"><img src="images/thumb-5.jpg"
+                             alt="thumb" />
+                        <P class="thumb">Pencil</br> Shop Now<i class='fa fa-angle-right'></i><i
+                               class='fa fa-angle-right'></i></P>
+                    </div>
+                    <div class="col-md"><img src="images/thumb-4.jpg"
+                             alt="thumb" />
+                        <P class="thumb">Stapler</br> Shop Now<i class='fa fa-angle-right'></i><i
+                               class='fa fa-angle-right'></i></P>
+                    </div>
+                </div>
+            </div>
+            <div id="shopid"
+                 class="carousel-item carousel-transition">
+                <div class="row ">
+                    <div class="col-md"><img src="images/thumb-4.jpg"
+                             alt="thumb" />
+                        <P class="thumb">Calculator</br> Shop Now<i class='fa fa-angle-right'></i><i
+                               class='fa fa-angle-right'></i></P>
+                    </div>
+                    <div class="col-md"><img src="images/thumb-5.jpg"
+                             alt="thumb" />
+                        <P class="thumb">Notebook</br> Shop Now<i class='fa fa-angle-right'></i><i
+                               class='fa fa-angle-right'></i></P>
+                    </div>
+                    <div class="col-md"><img src="images/thumb-2.jpg"
+                             alt="thumb" />
+                        <P class="thumb">Pencil</br> Shop Now<i class='fa fa-angle-right'></i><i
+                               class='fa fa-angle-right'></i></P>
+                    </div>
+                    <div class="col-md"><img src="images/thumb-3.jpg"
+                             alt="thumb" />
+                        <P class="thumb">Stapler</br> Shop Now<i class='fa fa-angle-right'></i><i
+                               class='fa fa-angle-right'></i></P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container ">
+        <div class="row second ">
+            <div class="col-md-4 postion-relative"><img src="images/banner-1.jpg"
+                     class="img-fluid postion-relative"
+                     alt="thumb"
+                     id="stimg" />
+                <div class="bann">
+                    <p><span id="stitem">stationery items</span></br><span id="save">SAVE 25%</span></br>
+                        <span id="bantext1">shop now</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row"
+                     id="stationeryimg">
+                    <img src="images/banner-2.jpg"
+                         class="img-fluid"
+                         alt="thumb" />
+                    <p class="bans"><span><b>KIDS STATIONERY</b></span> </br><span style="font-size: 12px;">shop
+                            now</span></p>
+                </div>
+                <div class="row"
+                     id="stationeryimg1">
+                    <img src="images/banner-3.jpg"
+                         class="img-fluid"
+                         alt="thumb" />
+                    <p class="bans1"><span><b>OFFICE STATIONERY</b></span> </br><span style="font-size: 12px;">shop
+                            now</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 postion-relative">
+                <img src="images/banner-4.jpg"
+                     class="img-fluid"
+                     alt="thumb"
+                     id="stimg" />
+                <div class="bann2">
+                    <p><span id="stitem1">stationery items</span></br><span id="save">SAVE 25%</span></br>
+                        <span id="bantext">shop now</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="services">
+            <h2>OUR SERVICES</h2>
+        </div>
+        <div class="container-fluid"
+             id="servicecont">
+            <div class="container postion-relative">
+                <div class="row serve">
+                    <div class="col-md-4"><img src="images/s2.jpg"
+                             class="img-fluid"
+                             id="seimg"
+                             alt="service" />
+                        <p id="servicename">School</p>
+                    </div>
+                    <div class="col-md-4"><img src="images/s1.jpg"
+                             class="img-fluid"
+                             id="seimg"
+                             alt="service" />
+                        <p id="servicename">Home Essential</p>
+                    </div>
+                    <div class="col-md-4"><img src="images/s3.jpg"
+                             class="img-fluid"
+                             id="seimg"
+                             alt="service" />
+                        <p id="servicename">Office supplies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row second">
+            <div class="col-md-2 box1 ">Latest Products<span class="caret"></span></div>
+            <div class="col-md-10 box3">
+                <a class="carousel-control-next"
+                   href="#productslide"
+                   role="button"
+                   data-slide="prev">
+                    <span class="carousel-control-prev-ico"
+                          aria-hidden="true"></span>
+                    <button type="button"
+                            class="arry1"><i class='fa fa-angle-left'></i></button></a>
+                <a class="carousel-control-next"
+                   href="#productslide"
+                   role="button"
+                   data-slide="next">
+                    <span class="carousel-control-next-ico"
+                          aria-hidden="true"></span>
+                    <button type="button"
+                            class="arry"><i class='fa fa-angle-right'></i></button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="productslide"
+         class="carousel slide container-fluid position-relative"
+         data-ride="carousel"
+         data-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active carousel-transition">
+                <div class="row"
+                     id="productrow">
+                    <div id="productid"><img src="images/pp8.jpg"
+                             id="proimg"
+                             alt="product" />
+                        <p id="productname">point pens</br>
+                            <span id="rate">$22.94</span><strike>$28.92</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-20%</span>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp7.jpg"
+                             id="proimg"
+                             alt="product" />
+                        <p id="productname">Binding material</br>
+                            <span id="rate">$29.58</span><strike>$34.92</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-10%</span>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp6.jpg"
+                             id="proimg"
+                             alt="product" />
+                        <p id="productname">Color inkjet paper</br>
+                            <span id="rate">$31.32</span><strike>$34.92</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-10%</span>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp5.jpg"
+                             id="proimg"
+                             alt="product" />
+                        <p id="productname">Document bag</br>
+                            <span id="rate">$8.57</span><strike>$14.20</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-40%</span>
+                        </p>
+                    </div>
+
+                    <div id="productid"><img src="images/pp4.jpg"
+                             alt="product" />
+                        <p id="productname">Binding supplies</br>
+                            <span id="rate">$34.94</span><strike>$43.92</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-20%</span>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp3.jpg"
+                             alt="product" />
+                        <p id="productname">Calenders</br>
+                            <span id="rate">$34.80</span><i class='fa fa-shopping-bag'></i>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp2.jpg"
+                             alt="product" />
+                        <p id="productname">Crystal craftwork</br>
+                            <span id="rate">$14.32</span><i class='fa fa-shopping-bag'></i>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp1.jpg"
+                             alt="product" />
+                        <p id="productname">First aid kit</br>
+                            <span id="rate">$14.57</span><i class='fa fa-shopping-bag'></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="carousel-item carousel-transition">
+                <div class="row"
+                     id="productrow">
+                    <div id="productid"><img src="images/pp1.jpg"
+                             alt="product" />
+                        <p id="productname">Ballpoint pens</br>
+                            <span id="rate">$22.94</span><strike>$28.92</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-20%</span>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp2.jpg"
+                             alt="product" />
+                        <p id="productname">Binding material</br>
+                            <span id="rate">$29.58</span><strike>$34.92</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-10%</span>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp3.jpg"
+                             alt="product" />
+                        <p id="productname">Color inkjet paper</br>
+                            <span id="rate">$31.32</span><strike>$34.92</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-10%</span>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp4.jpg"
+                             alt="product" />
+                        <p id="productname">Document bag</br>
+                            <span id="rate">$8.57</span><strike>$14.20</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-40%</span>
+                        </p>
+                    </div>
+
+                    <div id="productid"><img src="images/pp5.jpg"
+                             alt="product" />
+                        <p id="productname">Binding supplies</br>
+                            <span id="rate">$34.94</span><strike>$43.92</strike><i class='fa fa-shopping-bag'></i>
+                            <span id="tag">-20%</span>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp6.jpg"
+                             alt="product" />
+                        <p id="productname">Calenders</br>
+                            <span id="rate">$34.80</span><i class='fa fa-shopping-bag'></i>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp7.jpg"
+                             alt="product" />
+                        <p id="productname">Crystal craftwork</br>
+                            <span id="rate">$14.32</span><i class='fa fa-shopping-bag'></i>
+                        </p>
+                    </div>
+                    <div id="productid"><img src="images/pp8.jpg"
+                             alt="product" />
+                        <p id="productname">First aid kit</br>
+                            <span id="rate">$14.57</span><i class='fa fa-shopping-bag'></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="student">
+        <p class="studentban"><span id="studenthead">student stationery</span></br>
+            <span style="font-size: 15px;">It's Time To Get Knowledge</span></br>
+            <button type="button"
+                    class="btn studentbtn">Shop now</button>
+        </p>
+    </div>
+
+    <div class="container overflow-hidden"
+         id="smarttab">
+        <div class="row justify-content-around mx-5">
+            <div class="col-md-3"
+                 id="smart"><i class='fa fa-plane'
+                   id="icon11"></i>
+                <p class="text-center"
+                   id="tagname">FREE SHIPPING</br><span>For all orders above $100</span></p>
+            </div>
+            <div class="col-md-3"
+                 id="smart"><i class='fa fa-money'
+                   id="icon11"></i>
+                <p class="text-center"
+                   id="tagname">CASH ON DELIVERY</br><span>100% money back</span></p>
+            </div>
+            <div class="col-md-3"
+                 id="smart"><i class='fa fa-gift'
+                   id="icon11"></i>
+                <p class="text-center"
+                   id="tagname">SPECIAL GIFT CARD</br><span>Offer special bonus</span></p>
+            </div>
+            <div class="col-md-3"
+                 id="smart"><i class='fa fa-headphones'
+                   id="icon11"></i>
+                <p class="text-center"
+                   id="tagname">24/7 SUPPORT</br><span>Answer for question</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid"
+         id="about">
+        <div class="row">
+            <div class="col-md-8 about1">
+                <h2>ABOUT US</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                    accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi.
+                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</p>
+            </div>
+            <div class="col-md-4 about2">
+                <img src="images/unnamed.png"
+                     alt="john"
+                     id="img"
+                     height="300px" />
+                <button type="button"
+                        class="btn founder">John Smith</button></br>
+                <button type="button"
+                        class="btn founder1">Founder</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="testimoniaal"
+         class="carousel slide container"
+         data-ride="carousel"
+         data-interval="false">
+        <div class="carousel-inner "
+             id="testidfirst">
+            <div id="testid"
+                 class="carousel-item active carousel-transition media ">
+                <div class="sample mr-3"><img src="images/sample.png"
+                         id="sampleimg"
+                         alt="sample" />
+                    <p id="sample">Sample 1</p>
+                </div>
+                <div class=" media-body test">ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div id="testid"
+                 class="carousel-item carousel-transition media ">
+                <div class="sample mr-3"><img src="images/sample1.png"
+                         id="sampleimg"
+                         alt="sample" />
+                    <p id="sample">Sample 2</p>
+                </div>
+                <div class="media-body test ">ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <a class="carousel-control-next"
+               href="#testimoniaal"
+               role="button"
+               data-slide="prev">
+                <span class="carousel-control-next-ico"
+                      aria-hidden="true"></span>
+                <button class="slidebtn1"><i class='fa fa-angle-left'></i></button></a>
+            <a class="carousel-control-next"
+               href="#testimoniaal"
+               role="button"
+               data-slide="next">
+                <span class="carousel-control-next-ico"
+                      aria-hidden="true"></span>
+                <button class="slidebtn2"><i class='fa fa-angle-right'></i></button></a>
+        </div>
+    </div>
+
+
+    <section class="regular slider ">
+        <div id="slidee">
+            <img src="images/brand1.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand4.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand3.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand4.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand5.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand3.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand3.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand5.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand4.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand3.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand4.jpg"
+                 alt="brand">
+        </div>
+        <div id="slidee">
+            <img src="images/brand1.jpg"
+                 alt="brand">
+        </div>
+    </section>
+
+    <div class="container-fluid"
+         id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/Amazon_logo.svg" style="width: 100px;"
+                    alt="amazon_logo" />
+                    <p id="footul"> euismod tincidunt ut laoreet dolore magna aliquam erat
+                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper.</p>
+                    <p>&#169; copyright <span style="color: tomato;">onlinebizz</span></p>
+                </div>
+                <div class="col-md-3">
+                    <h3>LINKS</h3>
+                    <ul id="footul">
+                        <li id="footli">About us</li>
+                        <li id="footli">Delivery Information</li>
+                        <li id="footli">Privacy policy</li>
+                        <li id="footli">Terms & conditions</li>
+                        <li id="footli">Return policy</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 aboutlink">
+                    <h3>QUICK LINKS</h3>
+                    <ul id="footul">
+                        <li id="footli"><i class='fa fa-facebook'
+                               id="headicon"></i>Facebook</li>
+                        <li id="footli"><i class='fa fa-twitter'
+                               id="headicon"></i>Twitter</li>
+                        <li id="footli"><i class='fa fa-instagram'
+                               id="headicon"></i>Instagram</li>
+                        <li id="footli"><i class='fa fa-youtube'
+                               id="headicon"></i>Youtube</li>
+                        <li id="footli"><i class='fa fa-google'
+                               id="headicon"></i>Google Plus</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 aboutlink">
+                    <h3>CONTACTS</h3>
+                    <ul id="footul">
+                        <li id="footli"><i class='fa fa-map-marker'
+                               id="headicon"></i>14 navkar complex university road </br>Udaipur, Gujarat -313001 India
+                        </li>
+                        <li id="footli"><i class='fa fa-phone'
+                               id="headicon"></i>88888888</li>
+                        <li id="footli"><i class='fa fa-envelope-open'
+                               id="headicon"></i>demo@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"
+            type="text/javascript"></script>
+    <script src="./slick/slick.js"
+            type="text/javascript"
+            charset="utf-8"></script>
+    <script type="text/javascript">
+        $(".regular").slick({
+
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 6
+        });
+    </script>
+
+</body>
+
+
+</html>
