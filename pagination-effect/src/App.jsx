@@ -1,6 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { useState, useEffect } from "react";s
 
 import "./App.css";
 
@@ -71,7 +70,7 @@ const App = () => {
             onClick={() => selectPageHandler(page + 1)}
             className={page < products.length / 10 ? "" : "pagination__disable"}
           >
-            <IoIosArrowRoundForward />
+           ➡️
           </span>
         </div>
       )}
