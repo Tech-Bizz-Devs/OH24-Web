@@ -1,8 +1,25 @@
-# React + Vite
+<h1 align="center" id="title">React Pagination Website</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p id="description">This is a React-based website that demonstrates a pagination effect for displaying products fetched from an API.</p>
 
-Currently, two official plugins are available:
+<h2>Project Screenshots:</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="https://snipboard.io/yu0wK8.jpg" alt="project-screenshot" width="400" height="400/">
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Utilizes React.js for frontend development.
+*   Integrates with an API to fetch and display products.
+*   mplements pagination for better user experience and performance.
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   React JS
