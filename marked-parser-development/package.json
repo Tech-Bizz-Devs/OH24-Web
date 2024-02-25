@@ -1,0 +1,16 @@
+{
+  "name": "hackkar",
+  "version": "1.0.0",
+  "description": "This is the project for the hackcathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "marked": "^12.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
