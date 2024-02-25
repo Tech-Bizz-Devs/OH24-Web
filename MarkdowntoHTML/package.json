@@ -1,0 +1,15 @@
+{
+  "name": "markdowntohtml",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">   <h1>Markdown to HTML Converter</h1>   <p>This project is a simple Markdown to HTML converter built using Node.js. It converts Markdown formatted text into HTML, effectively interpreting various Markdown syntax elements such as headers, lists, bold and italic text, links, code blocks, among others.</p>   <hr> </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^12.0.0"
+  },
+  "devDependencies": {}
+}
