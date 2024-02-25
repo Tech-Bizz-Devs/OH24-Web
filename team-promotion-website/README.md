@@ -52,3 +52,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - **Testing**: We will conduct thorough testing to ensure the website functions as intended across different browsers and devices.
 - **Deployment**: Once development is complete, we will deploy the website to a hosting platform such as GitHub Pages or Netlify for public access.
 
+## Screenshots
+![Screenshot (195)](https://github.com/Its-Devendra/OH24-Web/assets/117556245/8005dca8-4db3-4669-b3be-f8eab9731496)
+![Screenshot (196)](https://github.com/Its-Devendra/OH24-Web/assets/117556245/91526dfa-a336-42fc-914e-2e4f62e790eb)
+![projImg5](https://github.com/Its-Devendra/OH24-Web/assets/117556245/6dca6bdb-dfcb-4a1d-a458-c1f5b823d64a)
