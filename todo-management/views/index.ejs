@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="flex flex-col items-center justify-center text-white mt-20 mx-auto px-10"
+    >
+      <h1 class="font-bold text-4xl mb-10">Todo Management System</h1>
+      <h2 class="text-purple-500 font-bold text-3xl">Add New Todo</h2>
+      <form class="flex flex-col gap-5 mt-5" action="/todos" method="post">
+        <input
+          class="bg-slate-900 w-[500px] h-[100px] rounded-3xl px-4 py-2 placeholder:font-semibold"
+          type="text"
+          name="todo"
+          placeholder="Enter your todo"
+        />
+        <button
+          class="w-full bg-purple-700 hover:bg-purple-900 h-[60px] rounded-2xl font-bold"
+          type="submit"
+        >
+          Add
+        </button>
+      </form>
+      <ul
+        class="max-w-[1000px] flex flex-wrap items-center justify-center mt-10 gap-10"
+      >
+        <% todos.forEach(todo => { %>
+        <li class="w-[300px] h-[300px] px-3 py-3 bg-slate-900 rounded-xl">
+          <p class="font-semibold text-xl"><%= todo.text %></p>
+          <div class="flex justify-between gap-4 mt-5">
+            <a
+              class="text-lg w-1/2 font-semibold px-3 py-2 text-center bg-gray-700 rounded-xl hover:bg-gray-800"
+              href="/edit/<%= todo.id %>"
+              >Edit</a
+            >
+            <a
+              class="text-lg w-1/2 font-semibold px-3 py-2 text-center bg-gray-700 rounded-xl hover:bg-gray-800"
+              href="/todos/<%= todo.id %>"
+              >View</a
+            >
+          </div>
+
+          <form
+            action="/delete/<%= todo.id %>?_method=DELETE"
+            method="post"
+            style="display: inline"
+          >
+            <button
+              class="bg-red-500 text-lg w-full rounded-xl font-semibold px-3 py-2 text-center mt-5"
+              type="submit"
+            >
+              Delete
+            </button>
+          </form>
+        </li>
+        <% }); %>
+      </ul>
+    </div>
+  </body>
+</html>

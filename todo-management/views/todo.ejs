@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Todo</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="flex flex-col items-center justify-center gap-10 text-white max-w-[500px] mx-auto mt-20"
+    >
+      <h1 class="font-bold text-3xl">Todo Details</h1>
+      <% if (todo) { %>
+      <p class="font-semibold text-center text-2xl"><%= todo.text %></p>
+      <% } else { %>
+      <p>Todo not found.</p>
+      <% } %>
+
+      <a
+        href="/"
+        class="w-full bg-purple-700 text-center py-4 hover:bg-purple-900 h-[60px] rounded-2xl font-bold"
+        >Go to home</a
+      >
+    </div>
+  </body>
+</html>
