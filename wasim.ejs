@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #productsContainer {
+            margin-bottom: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .product input[type="text"],
+        .product input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .product button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Price Tracker</h1>
+        <div id="productsContainer">
+            <!-- Products will be dynamically added here -->
+        </div>
+        <button id="addProductBtn">Add Product</button>
+    </div>
+    <script>
+        document.getElementById('addProductBtn').addEventListener('click', function () {
+            addProduct();
+        });
+
+        function addProduct() {
+            const productsContainer = document.getElementById('productsContainer');
+
+            // Create product container
+            const productContainer = document.createElement('div');
+            productContainer.classList.add('product');
+
+            // Product name input
+            const productNameInput = document.createElement('input');
+            productNameInput.type = 'text';
+            productNameInput.placeholder = 'Enter product name';
+            productContainer.appendChild(productNameInput);
+
+            // Product URL input
+            const productUrlInput = document.createElement('input');
+            productUrlInput.type = 'text';
+            productUrlInput.placeholder = 'Enter product URL';
+            productContainer.appendChild(productUrlInput);
+
+            // Target price input
+            const targetPriceInput = document.createElement('input');
+            targetPriceInput.type = 'number';
+            targetPriceInput.placeholder = 'Enter target price';
+            productContainer.appendChild(targetPriceInput);
+
+            // Button to start tracking
+            const trackBtn = document.createElement('button');
+            trackBtn.textContent = 'Start Tracking';
+            trackBtn.addEventListener('click', function () {
+                startTracking(productNameInput.value, productUrlInput.value, parseFloat(targetPriceInput.value));
+            });
+            productContainer.appendChild(trackBtn);
+
+            // Add product container to productsContainer
+            productsContainer.appendChild(productContainer);
+        }
+
+        function startTracking(name, url, targetPrice) {
+            // You can implement tracking logic here, like making API requests to track prices
+            // Make a request to a hypothetical price tracking API endpoint
+            fetch('https://example.com/track', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    url: url,
+                    targetPrice: targetPrice,
+                }),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to start tracking');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data.message); // Log success message or additional information
+                })
+                .catch(error => {
+                    console.error('Error starting tracking:', error);
+                });
+            // This example just logs the information
+            console.log(`Tracking ${name} (${url}) with target price $${targetPrice}`);
+        }
+
+    </script>
+</body>
+
+</html>
